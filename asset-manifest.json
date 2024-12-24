@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.81df8762.css",
-    "main.js": "/portfolio/static/js/main.6b56618e.js",
-    "static/media/b6.jpg": "/portfolio/static/media/b6.9694b012ff5eda970148.jpg",
-    "static/media/finance.png": "/portfolio/static/media/finance.fa48a51bc907fefa826a.png",
-    "static/media/w2.jpg": "/portfolio/static/media/w2.c8dee6f2b2d7caaaaeab.jpg",
-    "static/media/Janavi-S_Resume.pdf": "/portfolio/static/media/Janavi-S_Resume.7076457285a6cbc72633.pdf",
-    "static/media/editor.jpg": "/portfolio/static/media/editor.a77e1f39d6aaa6c9e965.jpg",
-    "static/media/sign.png": "/portfolio/static/media/sign.ad697383581e2210f99f.png",
-    "static/media/blog.jpg": "/portfolio/static/media/blog.eae1fb06c07e28198cd2.jpg",
-    "static/media/icon.png": "/portfolio/static/media/icon.bfc5344d2cda72ea3895.png",
-    "static/media/codGif.gif": "/portfolio/static/media/codGif.b6d55c08220cb38d48c2.gif",
-    "static/media/domain.png": "/portfolio/static/media/domain.a7c5ad1082e1c95dddaa.png",
-    "index.html": "/portfolio/index.html",
-    "main.81df8762.css.map": "/portfolio/static/css/main.81df8762.css.map",
-    "main.6b56618e.js.map": "/portfolio/static/js/main.6b56618e.js.map"
+    "main.css": "/Portfolio/static/css/main.3cf5200d.css",
+    "main.js": "/Portfolio/static/js/main.9cd77020.js",
+    "static/media/b6.jpg": "/Portfolio/static/media/b6.9694b012ff5eda970148.jpg",
+    "static/media/finance.png": "/Portfolio/static/media/finance.fa48a51bc907fefa826a.png",
+    "static/media/w2.jpg": "/Portfolio/static/media/w2.c8dee6f2b2d7caaaaeab.jpg",
+    "static/media/Janavi-S_Resume.pdf": "/Portfolio/static/media/Janavi-S_Resume.7076457285a6cbc72633.pdf",
+    "static/media/editor.jpg": "/Portfolio/static/media/editor.a77e1f39d6aaa6c9e965.jpg",
+    "static/media/sign.png": "/Portfolio/static/media/sign.ad697383581e2210f99f.png",
+    "static/media/blog.jpg": "/Portfolio/static/media/blog.eae1fb06c07e28198cd2.jpg",
+    "static/media/icon.png": "/Portfolio/static/media/icon.bfc5344d2cda72ea3895.png",
+    "static/media/codGif.gif": "/Portfolio/static/media/codGif.b6d55c08220cb38d48c2.gif",
+    "static/media/domain.png": "/Portfolio/static/media/domain.a7c5ad1082e1c95dddaa.png",
+    "index.html": "/Portfolio/index.html",
+    "main.3cf5200d.css.map": "/Portfolio/static/css/main.3cf5200d.css.map",
+    "main.9cd77020.js.map": "/Portfolio/static/js/main.9cd77020.js.map"
   },
   "entrypoints": [
-    "static/css/main.81df8762.css",
-    "static/js/main.6b56618e.js"
+    "static/css/main.3cf5200d.css",
+    "static/js/main.9cd77020.js"
   ]
 }
