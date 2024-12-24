@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "homepage":"https://janavi-s05.github.io/Portfolio/",
+=======
+  "homepage":"http://janavi-s05.github.io/Portfolio/",
+>>>>>>> 394f828e3cc576c889a9b4007c053bd13bdd4230
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
