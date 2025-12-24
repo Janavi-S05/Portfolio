@@ -1,0 +1,208 @@
+
+.home {
+    background-image: url(../../assets/b6.jpg); 
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home_container {
+    row-gap: 7rem;
+}
+
+.home_content {
+    display: grid;
+    grid-template-columns: 116px repeat(2, 1fr);
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.home_social {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+.home_social-icon {
+    font-size: 1.25rem;
+    color: var(--title-color);
+}
+
+.home_social-icon:hover {
+    color: var(--title-color-dark);
+}
+
+.home_title {
+    font-size: var(--big-font-size);
+    margin-bottom: var(--mb-0-25);
+    background: linear-gradient(135deg, #3a1c71 0%, #d76d77 50%, #ffaf7b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px; 
+    font-weight: bold;
+    /* font-family: 'Dancing Script', cursive; */
+}
+
+.home_hand {
+    width: 38px;
+    height: 38px;
+    margin-left: 0.4rem;
+}
+
+.home_subtitle {
+    position: relative;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-normal);
+    margin-bottom: var(--mb-1);
+}
+
+.home_description {
+    max-width: 400px;
+    margin-bottom: var(--mb-1);
+    text-align: justify;
+}
+
+.home_img {
+    background: url(../../assets/icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px rgba(227, 192, 255, 0.3);
+    order: 1;
+    justify-self: center;
+    width: 300px;  
+    height: 300px;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    animation: profile_animate 8s ease-in-out infinite 1s, move_image 8s linear infinite;
+}
+
+@keyframes profile_animate {
+    0%, 100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 40% 60% 70% 30% / 30% 60% 40% 70%;
+    }
+}
+
+@keyframes move_image {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(10px, -10px);
+    }
+    50% {
+        transform: translate(-10px, 10px);
+    }
+    75% {
+        transform: translate(10px, 10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .home_content {
+        grid-template-columns: 100px repeat(2, 1fr);
+        column-gap: 1.25rem;
+    }
+
+    .home_hand {
+        width: 26px;
+        height: 26px;
+    }
+
+    .home_subtitle {
+        padding-left: 3.75rem;
+        margin-bottom: var(--mb-1);
+    }
+
+    .home_subtitle::before {
+        width: 42px;
+        top: 0.8rem;
+    }
+
+    .home_description {
+        max-width: initial;
+    }
+
+    .home_img {
+        width: 250px;
+        height: 250px;
+        box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home_content {
+        grid-template-columns: 0.5fr 3fr;
+        padding-top: 3.5rem;
+    }
+
+    .home_img {
+        order: initial;
+        justify-self: initial;
+        box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
+        width: 200px;
+        height: 200px;
+    }
+
+    .home_data {
+        grid-column: 1 / 3;
+    }
+
+    .home_title {
+        padding-left: 3.75rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .home_img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .home_img {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .home_title {
+        font-size: 2rem;
+    }
+
+    .home_subtitle {
+        font-size: 1rem;
+    }
+
+    .home_description {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .button__icon {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home {
+        grid-template-columns: 100px repeat(2, 1fr);
+        column-gap: 1.2rem;
+        height: 120vh;
+    }
+
+    .home_container {
+        row-gap: 7rem;
+    }
+}
