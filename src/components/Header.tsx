@@ -41,6 +41,19 @@ const Header = () => {
                 key={link.href}
                 href={link.href}
                 className="text-base font-medium text-muted-foreground hover:text-primary transition-colors"
+                onClick={(e) => {
+                  // Prevent default to avoid HashRouter interfering and perform offset-aware scroll
+                  e.preventDefault();
+                  const id = link.href.replace('#', '');
+                  const el = document.getElementById(id);
+                  if (el) {
+                    const header = document.querySelector('header');
+                    const headerHeight = header ? (header as HTMLElement).offsetHeight : 0;
+                    const top = el.getBoundingClientRect().top + window.pageYOffset - headerHeight - 12;
+                    window.history.pushState(null, '', `#${id}`);
+                    window.scrollTo({ top, behavior: 'smooth' });
+                  }
+                }}
               >
                 {link.label}
               </a>
@@ -65,7 +78,20 @@ const Header = () => {
                 key={link.href}
                 href={link.href}
                 className="block py-3 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={(e) => {
+                  // Close the menu and perform offset-aware scroll
+                  setIsMobileMenuOpen(false);
+                  e.preventDefault();
+                  const id = link.href.replace('#', '');
+                  const el = document.getElementById(id);
+                  if (el) {
+                    const header = document.querySelector('header');
+                    const headerHeight = header ? (header as HTMLElement).offsetHeight : 0;
+                    const top = el.getBoundingClientRect().top + window.pageYOffset - headerHeight - 12;
+                    window.history.pushState(null, '', `#${id}`);
+                    window.scrollTo({ top, behavior: 'smooth' });
+                  }
+                }}
               >
                 {link.label}
               </a>

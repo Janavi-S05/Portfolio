@@ -41,15 +41,15 @@ const projects = [
     description: 'A real-time voice-enabled AI assistant built using Python, LiveKit Agents, and Google Gemini 2.0 Flash. Supports live, natural speech-to-speech conversation with low latency.',
     tags: ['Python', 'LiveKit', 'Gemini 2.0', 'WebRTC'],
     category: 'AI/ML',
-    github: 'https://github.com/Janavi-S05/Zudo-AI-Assistant',
+    github: 'https://github.com/Janavi-S05/Zudo_Assistant.git',
     image: assistantImg
   },
   {
-    title: 'Startup Trend Analyzer',
+    title: 'Research Assistant',
     description: 'A multi-agent AI platform built with Python and Streamlit to analyze startup trends based on real-time web input. Uses Groq\'s LLaMA3 with modular LLM agents.',
     tags: ['Python', 'Streamlit', 'Groq LLaMA3', 'LangChain'],
     category: 'AI/ML',
-    github: 'https://github.com/Janavi-S05/Startup-Trend-Analyzer',
+    github: 'https://github.com/Janavi-S05/Research-Assistant.git',
     image: analyzer
   },
   {
