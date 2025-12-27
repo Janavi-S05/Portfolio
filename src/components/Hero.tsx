@@ -52,6 +52,21 @@ const Hero = () => {
           <div className="animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
             <a
               href="#projects"
+              onClick={(e) => {
+                e.preventDefault();
+                const id = 'projects';
+                const el = document.getElementById(id);
+                if (el) {
+                  const header = document.querySelector('header');
+                  const headerHeight = header ? (header as HTMLElement).offsetHeight : 0;
+                  const top = el.getBoundingClientRect().top + window.pageYOffset - headerHeight - 4;
+                  window.history.pushState(null, '', `#${id}`);
+                  window.scrollTo({ top, behavior: 'smooth' });
+                } else {
+                  // fallback to change hash
+                  window.location.hash = `#projects`;
+                }
+              }}
               className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg"
             >
               <FileText size={18} />

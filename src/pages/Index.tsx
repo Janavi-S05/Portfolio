@@ -18,7 +18,7 @@ const Index = () => {
           // Account for fixed header by offsetting the final scroll position
           const header = document.querySelector('header');
           const headerHeight = header ? (header as HTMLElement).offsetHeight : 0;
-          const top = el.getBoundingClientRect().top + window.pageYOffset - headerHeight - 2; // extra spacing
+          const top = el.getBoundingClientRect().top + window.pageYOffset - headerHeight - 4; // small extra spacing
           window.scrollTo({ top, behavior: 'smooth' });
         }
       }
