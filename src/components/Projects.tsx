@@ -40,7 +40,7 @@ const projects = [
   {
     title: 'ShareLync',
     description: 'Developed a secure file-sharing application using Java and Spring Boot, allowing users to upload, organize, and share files via unique links. Implemented authentication, file management, and scalable backend APIs.',
-    tags: ['Java', 'SpringBoot', 'Amazon S3', 'DynamoDB', 'OpenAI API', 'JWT'],
+    tags: ['Java', 'SpringBoot', 'Amazon S3', 'DynamoDB', 'OpenAI API'],
     category: 'Full-Stack',
     demo: 'https://share-lync.vercel.app/',
     image: sharelync
