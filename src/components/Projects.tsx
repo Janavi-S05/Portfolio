@@ -7,7 +7,8 @@ import aslImg from '../assets/asl.jpg';
 import blogImg from '../assets/blog.jpg';
 import jobPlatform from '../assets/jobPlatform.jpg';
 import trackerImg from '../assets/tracker.png';
-import assistantImg from '../assets/voice.png';  
+import assistantImg from '../assets/voice.png';
+import sharelync from '../assets/sharelync.png';
 import analyzer from '../assets/analyzer.jpg';  
 
 const projects = [
@@ -35,6 +36,14 @@ const projects = [
     category: 'Full-Stack',
     github: 'https://github.com/Janavi-S05/ChronicleHub',
     image: blogImg
+  },
+  {
+    title: 'ShareLync',
+    description: 'Developed a secure file-sharing application using Java and Spring Boot, allowing users to upload, organize, and share files via unique links. Implemented authentication, file management, and scalable backend APIs.',
+    tags: ['Java', 'SpringBoot', 'Amazon S3', 'DynamoDB', 'OpenAI API'],
+    category: 'Full-Stack',
+    demo: 'https://share-lync.vercel.app/',
+    image: sharelync
   },
   {
     title: 'Zudo – AI Assistant',
